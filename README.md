@@ -18,6 +18,6 @@ Batch to install OpenCV with CUDA and Python binding on Windows
    - Set `pathToPython` value as the path to your Python directory
    - Set `cudaToolkitDir` value as the path to your CUDA Tookit root directory
 - Execute `installOpenCV.bat` for installation
-## Reference
+## References
 - [OpenCV build tutorial by James Bowley](https://jamesbowley.co.uk/build-opencv-with-cuda-in-windows/) 
 - [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
