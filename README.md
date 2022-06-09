@@ -13,9 +13,9 @@ Batch to install OpenCV with CUDA and Python binding on Windows
    - Specify the path to your OpenCV extra modules directory as `openCvExtraModules`
    - Specify the path to the directory where OpenCV is built as `openCvBuild` (the batch file will create this folder if it does not exist yet)
    - Set `generator` value according to your Visual Studio version
+   - Set `DCUDA_ARCH_PTX` value according to your NVIDIA GPU architecture version (Reference: [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/))
 - Define these system variables:
    - `CUDA_PATH`: path to your CUDA Tookit root directory (e.g, ``C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7``)
-   - `ARCH_PTX`: your NVIDIA GPU architecture version (e.g, ``8.6`` for RTX 3060 - Reference: [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/))
    - `PYTHON_INCLUDE_PATH`: path to your Python include directory (e.g, ``C:\Users\hoa\AppData\Local\Programs\Python\Python39\include``)
    - `PYTHON_LIBRARY_PATH`: path to your Python library (e.g, ``C:\Users\hoa\AppData\Local\Programs\Python\Python39\libs\python39.lib``)
    - `PYTHON_EXECUTABLE_PATH`: path to your Python executable file (e.g, ``C:\Users\hoa\AppData\Local\Programs\Python\Python39\python.exe``)
