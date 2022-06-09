@@ -3,6 +3,10 @@ set "openCvExtraModules=D:/SOURCE/opencv-4.6.0/opencv_contrib-4.6.0/modules"
 set "openCvBuild=D:/SOURCE/opencv-4.6.0/build"
 set "buildType=Release"
 set "generator=Visual Studio 17 2022"
+set "pyVer=39"
+set "pathToPython=C:/Users/hoa/AppData/Local/Programs/Python/Python39"
+set "cudaToolkitDir=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7"
+set "archPtx=8.6"
 mkdir "%openCvBuild%"
 "C:\Program Files\CMake\bin\cmake.exe" ^
 -B"%openCvBuild%/" ^
@@ -15,10 +19,10 @@ mkdir "%openCvBuild%"
 -DBUILD_EXAMPLES=ON ^
 -DBUILD_opencv_world=ON ^
 -DWITH_CUDA=ON ^
--DCUDA_TOOLKIT_ROOT_DIR="%CUDA_PATH%" ^
+-DCUDA_TOOLKIT_ROOT_DIR="%cudaToolkitDir%" ^
 -DCUDA_FAST_MATH=ON ^
 -DWITH_CUBLAS=ON ^
--DCUDA_ARCH_PTX=8.6 ^
+-DCUDA_ARCH_PTX=%archPtx% ^
 -DWITH_NVCUVID=ON ^
 -DWITH_OPENGL=ON ^
 -DWITH_MFX=ON ^
@@ -41,11 +45,11 @@ mkdir "%openCvBuild%"
 -DBUILD_opencv_rgbd=OFF ^
 -DHAVE_opencv_python3=ON ^
 -DBUILD_opencv_python3=ON ^
--DPYTHON3_INCLUDE_DIR="%PYTHON_INCLUDE_PATH%" ^
--DPYTHON3_LIBRARY="%PYTHON_LIBRARY_PATH%" ^
--DPYTHON3_EXECUTABLE="%PYTHON_EXECUTABLE_PATH%" ^
--DPYTHON3_NUMPY_INCLUDE_DIRS="%PYTHON_NUMPY_PATH%" ^
--DPYTHON3_PACKAGES_PATH="%PYTHON_SITE_PACKAGES_PATH%" ^
+-DPYTHON3_INCLUDE_DIR=%pathToPython%/include ^
+-DPYTHON3_LIBRARY=%pathToPython%/libs/python%pyVer%.lib ^
+-DPYTHON3_EXECUTABLE=%pathToPython%/python.exe ^
+-DPYTHON3_NUMPY_INCLUDE_DIRS=%pathToPython%/lib/site-packages/numpy/core/include ^
+-DPYTHON3_PACKAGES_PATH=%pathToPython%/Lib/site-packages/ ^
 -DOPENCV_SKIP_PYTHON_LOADER=ON
 
 "C:\Program Files\CMake\bin\cmake.exe" --build %openCvBuild% --target INSTALL --config Release
