@@ -7,6 +7,8 @@ Batch to install OpenCV with CUDA and Python binding on Windows
 - Visual Studio with option "Desktop development with C++":
   - Version 16 2019 is recommended for CMake >= 3.18.4
   - Version 17 2022 is recommended for CMake 3.23.2
+- TBB Library
+- MKL Library
 ## Usage
 - Download and unzip the OpenCV source code from [github.com/opencv/opencv/releases](https://github.com/opencv/opencv/releases)
 - Download and unzip the OpenCV extra modules from [github.com/opencv/opencv_contrib/tags](https://github.com/opencv/opencv_contrib/tags)
@@ -23,4 +25,5 @@ Batch to install OpenCV with CUDA and Python binding on Windows
 ## References
 - [OpenCV build tutorial by James Bowley](https://jamesbowley.co.uk/build-opencv-with-cuda-in-windows/) 
 - [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
-- [Intel's TBB Parallel Programming Library](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#onetbb)
+- [Intel's TBB Parallel Programming Library (TBB)](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#onetbb)
+- [Intel's Math Kernel Library (MKL)](https://www.intel.com/content/www/us/en/develop/documentation/get-started-with-mkl-for-dpcpp/top.html)
