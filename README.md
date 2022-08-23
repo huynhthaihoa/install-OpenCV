@@ -21,3 +21,4 @@ Batch to install OpenCV with CUDA and Python binding on Windows
 ## References
 - [OpenCV build tutorial by James Bowley](https://jamesbowley.co.uk/build-opencv-with-cuda-in-windows/) 
 - [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
+- [Intel's TBB Parallel Programming Library](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#onetbb)
