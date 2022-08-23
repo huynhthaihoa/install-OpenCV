@@ -4,7 +4,9 @@ Batch to install OpenCV with CUDA and Python binding on Windows
 - NVIDIA CUDA Toolkit
 - Python (version >= 3)
 - CMake (version >= 3.18.4 is recommended)
-- Visual Studio with option "Desktop development with C++" (version 16 2019 is recommended for CMake >= 3.18.4 & version 17 2022 is recommended for CMake 3.23.2)
+- Visual Studio with option "Desktop development with C++":
+  - Version 16 2019 is recommended for CMake >= 3.18.4
+  - Version 17 2022 is recommended for CMake 3.23.2
 ## Usage
 - Download and unzip the OpenCV source code from [github.com/opencv/opencv/releases](https://github.com/opencv/opencv/releases)
 - Download and unzip the OpenCV extra modules from [github.com/opencv/opencv_contrib/tags](https://github.com/opencv/opencv_contrib/tags)
